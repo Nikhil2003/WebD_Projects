@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+  color: black;
+}
+body {
+  width: 100%;
+  background-color: white;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 40px;
+  background-color: #e3e6f3;
+  /* box shadow me : x axis, y axis , 15px means deapth and rgba means */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+}
+#nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-bar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#nav-bar li a {
+  
+  font-size: 20px;
+  font-weight: bold;
+ 
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+
+}
+#nav-bar li a:hover,
+#nav-bar li a.active {
+  color: #088178;
+}
+
+#nav-bar li a.active::after ,
+#nav-bar li a:hover::after{
+    content:"";
+    width:30%;
+    height:2px;
+    left:20px;
+    background: #088178;
+    position: absolute;
+    bottom:-4px;
+
+}
